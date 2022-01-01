@@ -7,7 +7,7 @@ import numpy as np
 import json
 import os
 
-import pyrebase
+# import pyrebase
 
 # firebaseConfig = {
 #   'apiKey': "AIzaSyBqsfZ2M9fkEJSwQ052O7P22mD3U2fV0dk",
@@ -20,20 +20,20 @@ import pyrebase
 #   'measurementId': "G-H2KR6ND1XP"
 # }
 
-firebaseConfig = {
-    'apiKey': "AIzaSyBP2zhRbulVvA-AWMW9CUKGB4qkak7FPaU",
-    'authDomain': "projecttryit-44257.firebaseapp.com",
-    'databaseURL': "https://projecttryit-44257-default-rtdb.firebaseio.com",
-    'projectId': "projecttryit-44257",
-    'storageBucket': "projecttryit-44257.appspot.com",
-    'messagingSenderId': "875999382157",
-    'appId': "1:875999382157:web:8ddcb9354f701cc801b0c4",
-    'measurementId': "G-TMXFF5BXWV"
-  }
+# firebaseConfig = {
+#     'apiKey': "AIzaSyBP2zhRbulVvA-AWMW9CUKGB4qkak7FPaU",
+#     'authDomain': "projecttryit-44257.firebaseapp.com",
+#     'databaseURL': "https://projecttryit-44257-default-rtdb.firebaseio.com",
+#     'projectId': "projecttryit-44257",
+#     'storageBucket': "projecttryit-44257.appspot.com",
+#     'messagingSenderId': "875999382157",
+#     'appId': "1:875999382157:web:8ddcb9354f701cc801b0c4",
+#     'measurementId': "G-TMXFF5BXWV"
+#   }
 
-firebase = pyrebase.initialize_app(firebaseConfig)
+# firebase = pyrebase.initialize_app(firebaseConfig)
 
-db = firebase.database()
+# db = firebase.database()
 
 app = Flask(__name__, template_folder='template')
 
