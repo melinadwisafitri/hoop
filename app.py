@@ -1,4 +1,3 @@
-from logging import debug
 import pickle
 import cv2
 from flask import Flask, render_template, Response
