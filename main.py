@@ -5,7 +5,7 @@ import tensorflow as tf
 import json
 from flask import Flask, render_template, Response
 
-app = Flask(__name__, template_folder='template')
+app = Flask(__name__, template_folder="template")
 
 
 # how to call in route main
@@ -114,6 +114,11 @@ def park1():
             frame = cv2.imencode('.jpg', img)[1].tobytes()
             yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
+
+@app.route('/video_parking1')
+def video_feed():
+    """Video streaming route. Put this in the src attribute of an img tag."""
+    return Response(park1(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 
