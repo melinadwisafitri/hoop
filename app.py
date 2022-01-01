@@ -41,7 +41,7 @@ app = Flask(__name__, template_folder='template')
 @app.route('/')
 def anyname():
     """Video streaming home page."""
-    return render_template("index.html")
+    return "<h1>Welcome to Geeks for Geeks</h1>"
 
 
 # this is to read in the other route
