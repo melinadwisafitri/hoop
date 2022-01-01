@@ -1,0 +1,9 @@
+.dockerignore
+deploy.sh
+image_readme
+Dockerfile
+preprocessing
+.gcloudignore
+README.md
+template/onscr.html
+spot_space/redme.md
